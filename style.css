@@ -1,0 +1,282 @@
+* {
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+font-size: 100%;
+margin: 0px 250px 80px 250px;
+background: linear-gradient(45deg, #c0bebe 0%, #1f1f31 96.35%);
+max-width: 100vw;
+}
+
+header {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    border-bottom: #ffffff double;
+  
+}
+
+#logosup {
+    height:80px;
+    display:flex;
+
+}
+
+nav {
+    display:flex;
+    position:relative;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    gap: 36px;
+    color:rgb(255, 255, 255);
+    flex-wrap: wrap;
+
+}
+
+.menu:hover {
+background:rgb(84, 84, 90);
+color: white;
+border-radius: 180px;
+transition: 1s;
+background-size:auto;
+padding: 0.3cm;
+}
+
+.whatsapp {
+    height: 32px;
+    color: white;
+}
+.facebook {
+    height: 30px;
+}
+.instagram {
+    height: 32px;
+}
+
+.tituloprinc {
+    color:rgb(34, 28, 20);
+    display:flex;
+    padding: 16px;
+    justify-content: center;
+}
+
+.textohistoria{
+    background-color: azure;
+    border-radius: 20px;
+    border-style:solid;
+    border-color: #5a5050;
+    box-shadow: #000000;
+    justify-content: center;
+    padding: 20px;
+    text-align: justify;
+    text-shadow: #000000 0.5em;
+    color:rgb(34, 28, 20)
+}
+
+#quemsomos{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    margin: 25px;  
+    text-shadow: #000000 0.3em;   
+}
+
+
+.fotohistoria {
+    height: 300px;
+    margin-left: 120px;
+    margin-top: 120px;
+}
+
+.redessociais, .whatsapp, .facebook, .instagram {
+    display:flex;
+    justify-content:flex-start;
+    align-content: center;
+    margin-top:5px;
+    transition: 1s;
+    list-style-type: none;
+    color: white;
+    opacity:1;
+}
+
+
+.redessociais {
+    display:flex;
+    flex-direction: row;
+    border-bottom: #fff double;
+    padding-bottom: 5px;
+}
+
+.whatsapp:hover{
+    opacity:0.5;
+}
+
+.facebook:hover{
+    opacity:0.5;
+}
+
+.instagram:hover{
+    opacity:0.5;
+}
+a {
+    color: white;
+    transition: 1s;
+}
+
+a:hover{
+   font-size: 1.2em;
+
+}
+
+main {
+    margin-bottom: 36px;
+}
+
+#ondeestamos{
+    display:flex;
+    flex-direction: column;
+    margin-top:36px;
+    border-top: #ffffff double;
+    gap: 36px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    border-bottom: #ffffff double;
+  
+}
+p{
+    color:white;
+}
+
+.mapa{
+    border-radius: 48px;
+}
+
+#tituloondeestamos{
+    color:white;
+}
+
+.formcurriculo{
+    display:flex;
+    flex-direction: column;
+    margin-top:12px;
+    gap: 36px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    border-bottom: #ffffff double;
+    text-decoration: none;
+}
+
+#trabalheconosco{
+    color:white;
+}
+
+#contato{
+    color:white;
+}
+
+.formulario{
+    color:white;
+    background-color: #5a5050;
+    display:flex;
+    flex-direction: column;
+    border-radius: 36px;
+    border-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9cm;
+    margin-top:0;
+    
+}
+
+main .formulario label{
+    display:flex;
+    flex-direction: column;
+}
+
+main .curriculo h2{
+    margin-bottom:36px;
+    
+}
+main .contatos h2{
+    margin-bottom:36px;
+    
+}
+main .formulario span{
+    font-size:1.1rem;
+    margin-top:2rem;
+}
+
+main .forms{
+display:flex;
+gap:36px;
+
+}
+
+main .curriculo{
+    margin-top: 36px;
+    margin-bottom:12px;
+    display:flex;
+    flex-direction: column;
+    border-style: none;
+}
+
+main .contatos{
+    margin-top: 36px;
+    display:flex;
+    flex-direction: column;
+}
+
+main .anexoform{
+    display:flex;
+    justify-content: center;
+}
+
+.botao{
+    background: #5a5050;
+    border-radius: 36px;
+    padding:0.3cm;
+    margin-top: 12px;
+    margin-bottom:16px;
+    border-style:groove;
+    color:white;
+}
+
+.botao:hover{
+    background: #ddd3d3;
+    border-radius: 36px;
+    padding:0.3cm;
+    margin-top: 12px;
+    border-style:groove;
+    color:black;    
+    cursor:pointer;
+}
+
+footer{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin-bottom:0;
+}
+
+footer ul{
+    display:flex;
+    list-style: none;
+    margin-top:0;
+    padding:0;
+    gap:24px;
+    color: white
+}
+
+.anexoform {
+    padding-bottom:24px;
+    margin-top:16px;
+}
