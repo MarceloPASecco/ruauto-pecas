@@ -54,7 +54,9 @@ padding: 0.3cm;
     color: white;
 }
 .facebook {
-    height: 30px;
+    height: 32px;
+    margin-top:3px;
+   
 }
 .instagram {
     height: 32px;
@@ -68,7 +70,7 @@ padding: 0.3cm;
 }
 
 .textohistoria{
-    background-color: azure;
+    background-color: rgba(255, 255, 255, 0.527);
     border-radius: 20px;
     border-style:solid;
     border-color: #5a5050;
@@ -153,7 +155,11 @@ main {
   
 }
 p{
-    color:white;
+    text-align: center;
+    color:#1f1f31;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
+    padding:12px;
 }
 
 .mapa{
@@ -192,8 +198,8 @@ p{
 }
 
 .formulario{
-    color:white;
-    background-color: #5a5050;
+    color:#1f1f31;
+    background-color: rgba(255, 255, 255, 0.5);
     display:flex;
     flex-direction: column;
     border-radius: 36px;
@@ -243,11 +249,6 @@ main .contatos{
     flex-direction: column;
 }
 
-main .anexoform{
-    display:flex;
-    justify-content: center;
-}
-
 .botao{
     background: #5a5050;
     border-radius: 36px;
@@ -275,6 +276,7 @@ footer{
     flex-direction: column;
     margin-bottom:0;
     padding-bottom:0;
+    color: rgb(44, 44, 44);
 }
 
 footer ul{
@@ -283,14 +285,21 @@ footer ul{
     margin-top:0;
     padding:0;
     gap:24px;
-    color: white
+    color: rgb(44, 44, 44);
 }
 
-.anexoform {
-    padding-bottom:24px;
-    margin-top:16px;
+#emailform{
+    width: 300px;
 }
 
+#mensagemform{
+    width: 300px;
+    min-height: 150px;
+}
+
+#name{
+    width:300px;
+}
 @media only screen and (max-width: 600px){
     body{
         margin:0;
@@ -322,7 +331,8 @@ footer ul{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin:0;   
+        margin:0;
+        padding-top: 32px;     
     }
 
     .forms{
@@ -345,7 +355,7 @@ footer ul{
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1200px){
+@media only screen and (min-width: 600px) and (max-width: 1244px){
     body{
         margin:0;
         padding: 0;
@@ -377,7 +387,8 @@ footer ul{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin:0;   
+        margin:0; 
+        padding-top: 32px;  
     }
 
     .forms{
@@ -393,7 +404,7 @@ footer ul{
 
     .menubottom{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
