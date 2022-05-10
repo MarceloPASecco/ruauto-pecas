@@ -77,7 +77,9 @@ padding: 0.3cm;
     padding: 20px;
     text-align: justify;
     text-shadow: #000000 0.5em;
-    color:rgb(34, 28, 20)
+    color:rgb(34, 28, 20);
+    min-width: 320px;
+    max-width: 320px;
 }
 
 #quemsomos{
@@ -155,7 +157,14 @@ p{
 }
 
 .mapa{
-    border-radius: 48px;
+    display:flex;
+    flex-direction: column;
+    min-width: 350px;
+}
+
+.mapa iframe{
+    border-radius: 24px;
+    min-width: 350px;
 }
 
 #tituloondeestamos{
@@ -265,6 +274,7 @@ footer{
     align-items:center;
     flex-direction: column;
     margin-bottom:0;
+    padding-bottom:0;
 }
 
 footer ul{
@@ -279,4 +289,115 @@ footer ul{
 .anexoform {
     padding-bottom:24px;
     margin-top:16px;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        margin:0;
+        padding: 0;
+    }
+
+    header{
+        display:flex;
+        flex-direction: column;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .redessociais{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tituloprinc{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotohistoria{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0;   
+    }
+
+    .forms{
+        display:flex;
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+
+    .menubottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .logofooter{
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1200px){
+    body{
+        margin:0;
+        padding: 0;
+    }
+
+    header{
+        display:flex;
+        flex-direction: column;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .redessociais{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tituloprinc{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotohistoria{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0;   
+    }
+
+    .forms{
+        display:flex;
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+
+    .menubottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logofooter{
+        width: 300px;
+    }
 }
