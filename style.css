@@ -54,7 +54,9 @@ padding: 0.3cm;
     color: white;
 }
 .facebook {
-    height: 30px;
+    height: 32px;
+    margin-top:3px;
+   
 }
 .instagram {
     height: 32px;
@@ -68,7 +70,7 @@ padding: 0.3cm;
 }
 
 .textohistoria{
-    background-color: azure;
+    background-color: rgba(255, 255, 255, 0.527);
     border-radius: 20px;
     border-style:solid;
     border-color: #5a5050;
@@ -77,7 +79,9 @@ padding: 0.3cm;
     padding: 20px;
     text-align: justify;
     text-shadow: #000000 0.5em;
-    color:rgb(34, 28, 20)
+    color:rgb(34, 28, 20);
+    min-width: 320px;
+    max-width: 320px;
 }
 
 #quemsomos{
@@ -151,12 +155,17 @@ main {
   
 }
 p{
-    color:white;
+    text-align: center;
+    color:#1f1f31;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 24px;
+    padding:12px;
 }
 
 .mapa{
     display:flex;
     flex-direction: column;
+    min-width: 350px;
 }
 
 .mapa iframe{
@@ -189,8 +198,8 @@ p{
 }
 
 .formulario{
-    color:white;
-    background-color: #5a5050;
+    color:#1f1f31;
+    background-color: rgba(255, 255, 255, 0.5);
     display:flex;
     flex-direction: column;
     border-radius: 36px;
@@ -240,11 +249,6 @@ main .contatos{
     flex-direction: column;
 }
 
-main .anexoform{
-    display:flex;
-    justify-content: center;
-}
-
 .botao{
     background: #5a5050;
     border-radius: 36px;
@@ -271,6 +275,8 @@ footer{
     align-items:center;
     flex-direction: column;
     margin-bottom:0;
+    padding-bottom:0;
+    color: rgb(44, 44, 44);
 }
 
 footer ul{
@@ -279,14 +285,21 @@ footer ul{
     margin-top:0;
     padding:0;
     gap:24px;
-    color: white
+    color: rgb(44, 44, 44);
 }
 
-.anexoform {
-    padding-bottom:24px;
-    margin-top:16px;
+#emailform{
+    width: 300px;
 }
 
+#mensagemform{
+    width: 300px;
+    min-height: 150px;
+}
+
+#name{
+    width:300px;
+}
 @media only screen and (max-width: 600px){
     body{
         margin:0;
@@ -318,7 +331,8 @@ footer ul{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin:0;   
+        margin:0;
+        padding-top: 32px;     
     }
 
     .forms{
@@ -335,6 +349,64 @@ footer ul{
     .menubottom{
         display: flex;
         flex-direction: column;
+    }
+    .logofooter{
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1244px){
+    body{
+        margin:0;
+        padding: 0;
+    }
+
+    header{
+        display:flex;
+        flex-direction: column;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .redessociais{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tituloprinc{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fotohistoria{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0; 
+        padding-top: 32px;  
+    }
+
+    .forms{
+        display:flex;
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+
+    .menubottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     .logofooter{
         width: 300px;
